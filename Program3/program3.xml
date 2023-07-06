@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="main.css" type="text/css"?>
+<info>
+<std1>
+<no> Student 1</no>
+<usn> 4CB21IS001</usn>
+<name>Aditya Kamath </name>
+<cn> Canara Engineering College </cn>
+<br> ISE </br>
+<yr> 2021 </yr>
+<id> adityakamath@gmail.com </id>
+</std1>
+<std2>
+<no> Student 2</no>
+<usn> 4CB21IS002</usn>
+<name>Amulya Jois</name>
+<cn> Canara Engineering College </cn>
+<br> ISE </br>
+<yr> 2021 </yr>
+<id> admulyajois@gmail.com </id>
+</std2>
+<std3>
+<no> Student 3</no>
+<usn> 4CB21IS014</usn>
+<name>Dhruva Bhat S N</name>
+<cn> Canara Engineering College </cn>
+<br> ISE </br>
+<yr> 2021 </yr>
+<id> dhruvabhat24@gmail.com </id>
+</std3>
+</info>

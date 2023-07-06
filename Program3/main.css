@@ -1,0 +1,32 @@
+usn{
+    color:blue;
+    font-size:20pt;
+    font-weight: bold;
+    font-family: Verdana;
+}
+name{
+    color:red;
+    font-size:20pt;
+    font-weight: bold;
+}
+cn{
+    color:brown
+}
+br{
+    color:orange
+}
+yr{
+    color:purple
+}
+id{
+color:green
+}
+std1{
+display:block
+}
+std2{
+display:block
+}
+std3{
+    display:block
+}
