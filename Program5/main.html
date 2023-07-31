@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display of Date</title>
+        <style type="text/css"> body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+        
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        
+        input[type="button"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+        
+        
+        html, body {
+            height: 100%;
+        }
+        
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        </style>
+    </head>
+    <body>
+        <script>
+            function display()
+            {
+                var d=new Date();
+                var date=d.getDate();
+                var month=d.getDate();
+                month++;
+                var year=d.getFullYear();
+                document.getElementById("dis").value=date+"/"+month+"/"+year;
+            }
+        </script>
+        <form>
+           <input type="text" id="dis"/><br />
+           <input type="button" value="display" onclick="display()"/>
+        </form>
+    </body>
+</html>
