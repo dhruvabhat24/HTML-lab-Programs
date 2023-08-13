@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Displaying sum of numbers</title>
+    </head>
+    <body>
+        <script>
+            function addsum(){
+            alert("you are going to give me a number . I'm going to add them,together for you");
+            var keepgoing=1
+            var sum=0,next
+            while(keepgoing){
+                next=parseInt(prompt("what's the next number to add?"))
+                sum=sum+(next)
+                keepgoing=confirm("add another number ?")
+            }
+            alert("the sum of all your numbers is"+sum)
+        }
+        </script>
+        <form>
+            <input type="button" value="sum of n numbers" onclick="addsum()"/>
+        </form>
+    </body>
+</html>
