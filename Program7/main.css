@@ -1,0 +1,19 @@
+title{ color:red;
+font-size:10pt;
+}
+table{
+    border:10pt thick;
+    border-top-width:thick;
+    border-bottom-width:thick;
+    border-left-width:thick;
+    border-right-width:thick;
+}
+th{
+    color:blue;
+}
+td{
+    color:brown;
+}
+body{
+    background-color:lightgreen;
+}
