@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calender</title>
+    </head>
+    <body>
+        <h1><center><b>Month Of November</b></center></h1>
+        <script>
+            document.write("<br><table border=1 align center>");
+             document.write("<tr><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturaday</th><th>Sunday</th></tr>");
+            var i,j,n=1;
+            document.write("<tr>");
+                for(i=1;i<=5;i++)
+                {
+                    for(j=1;j<=7;j++)
+                    {
+                        if(n<=30)
+                        {
+                            document.write("<td>",n,"</td>");
+                            n++;
+                        }
+                    }
+                    document.write("</tr><tr>");
+                }
+                document.write("</table>")
+        </script>
+    </body>
+</html>
