@@ -7,5 +7,5 @@
 5. Displaying date with display buttons
 6. Displaying sum of numbers with alert and confirm messages
 7. Squares and Cubes in a table
-8. Displaying the calender
+8. Displaying the Calender
 
