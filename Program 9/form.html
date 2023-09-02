@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <script>
+    function validateForm() {
+      var username = document.forms["registrationForm"]["username"].value;
+      var password = document.forms["registrationForm"]["password"].value;
+      var email = document.forms["registrationForm"]["email"].value;
+      var mobile = document.forms["registrationForm"]["mobile"].value;
+      
+      var usernamePattern = /^[A-Za-z]+$/;
+      var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;// ^ indicates start of string,/ indicates delimiter for regex
+      var mobilePattern = /^\d{10}$/;
+      
+      if (!username.match(usernamePattern)) {
+        alert("Username should contain only alphabets.");
+        return false;
+      }
+      
+      if (password.length < 6) {
+        alert("Password should be at least 6 characters long.");
+        return false;
+      }
+      
+      if (!email.match(emailPattern)) {
+        alert("Invalid email format.");
+        return false;
+      }
+      
+      if (!mobile.match(mobilePattern)) {
+        alert("Mobile number should contain 10 digits.");
+        return false;
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Registration Form</h1>
+  <form name="registrationForm" onsubmit="return validateForm()">
+    <label>Username:</label>
+    <input type="text" name="username" required><br>
+    
+    <label>Password:</label>
+    <input type="password" name="password" required><br>
+    
+    <label>Email:</label>
+    <input type="email" name="email" required><br>
+    
+    <label>Mobile Number:</label>
+    <input type="tel" name="mobile" required><br>
+    
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
