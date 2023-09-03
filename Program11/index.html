@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Similarity</title>
+</head>
+<body>
+    <h1>Strig Matching and Element Access</h1>
+    <script>
+        function searchingString(){
+            var sentance=prompt("Enter the sentance");
+            var word=prompt("Enter the word to search");
+            var exists=sentance.includes(word);
+
+            if(exists){
+                document.getElementById("result").innerText="The word "+word+" exists in the sentance"+sentance;
+            }
+            else{
+                document.getElementById("result").innerText="The word "+word+" does not exists in the sentance"+sentance;
+            }
+            var firstchar = sentance.charAt(0);
+            document.getElementById("charecter").innerText="The first charecter of the sentance is"+firstchar;
+        }
+    </script>
+    <form>
+        <input type="button" value="Search" onclick="searchingString()">
+    </form>
+    <div id="result"></div>
+    <div id="charecter"></div>
+</body>
+</html>
